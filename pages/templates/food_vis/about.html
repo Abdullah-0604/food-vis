@@ -1,1 +1,15 @@
-About Page !!
+{% extends 'food_vis/base.html' %}
+
+{% load static %}
+
+{% block content%}
+        <div class="card" style="width: 18rem;">
+    <img src="{% static 'food_vis/images/me.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="{% url 'about' %}" class="btn btn-primary">Read more...</a>
+    </div>
+    </div>
+
+{% endblock content %}
