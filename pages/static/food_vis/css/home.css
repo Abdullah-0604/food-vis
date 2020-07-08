@@ -1,0 +1,139 @@
+
+.mapvis{
+    float: right;
+    width: 50%;
+    margin-right: 500px;
+    
+}
+
+path{
+    fill: white;
+    stroke: black;
+}
+
+path:hover{
+    fill: aqua;
+}
+
+#province1map{
+    fill:white;
+    stroke: black;
+    stroke-width: 2px;
+    width: 50%;
+    float: left;
+
+} 
+
+#province2map{
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
+    width: 50%;
+    float: left;
+}
+
+#province3map{
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
+    width: 50%;
+    float: left;
+}
+
+#province4map{
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
+    width: 50%;
+    float: left;
+}
+
+#province5map{
+    fill:white;
+    stroke: black;
+    stroke-width: 2px;
+    width: 50%;
+    float: left;
+
+
+} 
+
+.maptext{
+    font-size: 10pt;
+    font-style: normal;
+    text-anchor: start;
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    width: 50%;
+    margin-top: 20px;
+    float:right;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    vertical-align: bottom;
+  }
+  
+  tr{
+      height: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #d0f01a;
+  }
+  tr:nth-child(odd) {
+    background-color: #14dfe6;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+caption{
+    display: inline-table;
+    color: black;
+    font-size: small;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+
+
+/*ball animation*/
+
+
+.flag{
+    position: fixed;
+    float: left;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+    animation-iteration-count: infinite;
+
+  }
+  
+  @keyframes bounce {
+    from { transform: translate3d(0, 0, 0);     
+            background-color: #1114ca;}
+    to   { transform: translate3d(0, 200px, 0);
+            background-color: rgb(241, 21, 13); }
+    
+  }
+
+  
+ 
+
+
+
+
+

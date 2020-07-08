@@ -1,7 +1,7 @@
 {% extends 'food_vis/base.html' %}
 
 {% block content %}
-    <svg id ="province5map" width="1500" height="1500" viewbox="150 300 1200 1200">
+    <svg id ="province1map" width="500" height="500" viewbox="170 250 500 500">
         <g>
         <path id="nawalparasiwest" onclick="districtClick(this)" onmouseover="districtHover(this)" class="mkhover prov5" d="M578.551,545.754c-1.527,0.624-2.381,2.637-2.151,4.365c1.698,1.813,4.192,1.104,6.403,1.188c-3.398,2.809-2.494,7.798-5.896,10.688c-2.495-0.198-5.104-0.709-7.513,0.396c-1.392,2.101-1.813,5.304-0.396,7.515c1.39,1.188,3.005,2.098,4.593,3.09c-1.503,1.503-2.807,4.195-5.301,3.714c-1.588-0.709-2.807-1.896-4.11-2.892c-4.791-3.997-10.914-5.612-15.984-8.901c-4.706-3.004-9.896-4.903-14.517-7.908c-0.99-7.597-0.794-15.19-1.502-22.705c1.105-2.41,2.409-5.301,5.104-5.896c4.706-1.307,8.703-4.11,12.896-6.293c3.089-1.814,5.414-6.013,9.41-5.612c4.763,0.453,9.524,0.142,14.23,0.396L578.551,545.754z" title="Nawalparasi West"></path><text class="maptext" transform="matrix(1 0 0 1 552.2993 536.3115)" x="-20" y="10">Nawalparasi (West)</text>
         </g>
@@ -40,5 +40,47 @@
         </g>
     </svg>
 
+
+    <!-- Table to show data -->
+    <table>
+        <tr>
+            <th>Districts</th>
+            <th>Headquarter</th>
+            <th>Population</th>
+            <th>Area</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
 {% endblock content %}
+
 

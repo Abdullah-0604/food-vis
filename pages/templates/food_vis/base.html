@@ -3,6 +3,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+     
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,6 +18,7 @@
     <!-- Bootstrap Dropdown Hover CSS -->
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'food_vis/css/home.css' %}">
 
     <title>Hello, world!</title>
   </head>
@@ -29,8 +32,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href={% url 'home'%}>
-    <img src="{% static 'food_vis/images/logo.png' %}" width="35" height="35" class="d-inline-block align-top" alt="">
-    Food_Viz</a>
+    <img src="{% static 'food_vis/images/nepalflag.png' %}" width="35" height="35" class="d-inline-block align-top" alt="">
+    NEPINfO</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -46,13 +49,16 @@
           Province
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
-          <li><a class="dropdown-item" href={% url 'province'%}>Province 1</a></li>
+          <li><a class="dropdown-item" href={% url 'province1'%}>Province 1</a></li>
           <div class="dropdown-divider"></div>
-          <li><a class="dropdown-item" href={% url 'province' %}>Province 2</a></li>
+          <li><a class="dropdown-item" href={% url 'province2' %}>Province 2</a></li>
           <div class="dropdown-divider"></div>
-          <li><a class="dropdown-item" href={% url 'province' %}>Province 3</a></li>
+          <li><a class="dropdown-item" href={% url 'province3' %}>Province 3</a></li>
           <div class="dropdown-divider"></div>
-          <li><a class="dropdown-item" href={% url 'province' %}>Province 4</a></li>
+          <li><a class="dropdown-item" href={% url 'province4' %}>Province 4</a></li>
+          <div class="dropdown-divider"></div>
+          <li><a class="dropdown-item" href={% url 'province5' %}>Province 5</a></li>
+
         </ul>
       </li> 
       <!-- Visualization page -->
